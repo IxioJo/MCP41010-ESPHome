@@ -1,5 +1,6 @@
 from esphome import core
 import esphome.codegen as cg
+IS_PLATFORM_COMPONENT = True
 
 mcp41010_ns = cg.esphome_ns.namespace("mcp41010")
 MCP41010 = mcp41010_ns.class_("MCP41010", cg.Component, cg.spi.SPIDevice)
